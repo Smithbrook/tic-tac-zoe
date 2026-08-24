@@ -67,9 +67,18 @@
   .marks-row{ display:flex; align-items:center; gap:20px; font-size:14px; color:rgba(22,19,17,0.8); border-top:1px solid var(--border); padding-top:16px; }
   .marks-row .mark-wrap{ display:flex; align-items:center; gap:8px; }
   .marks-row .mark-icon{ width:20px; height:20px; }
-  .sidebar-footer{ margin-top:auto; display:flex; flex-direction:column; gap:4px; border-top:1px solid var(--border); padding-top:16px; font-size:14px; color:var(--muted); }
+  .sidebar-footer{ margin-top:auto; display:flex; flex-direction:column; gap:16px; border-top:1px solid var(--border); padding-top:16px; font-size:14px; color:var(--muted); }
   .sidebar-footer a{ color:rgba(22,19,17,0.8); text-decoration:underline; text-decoration-color:var(--border); text-underline-offset:4px; }
   .sidebar-footer a:hover{ color:var(--blue); text-decoration-color:var(--blue); }
+  .sidebar-footer p{ margin:0; }
+  .support-btn{
+    display:flex; align-items:center; justify-content:center; gap:8px;
+    width:100%; padding:11px 16px; border-radius:999px; border:1px solid var(--border);
+    background:var(--card); color:var(--ink); font-weight:600; font-size:14px;
+    text-decoration:none; transition:background-color .15s ease, border-color .15s ease;
+  }
+  .support-btn:hover{ background:var(--secondary); border-color:rgba(120,112,104,0.5); }
+  .support-btn svg{ flex-shrink:0; }
 
   /* ---------- buttons ---------- */
   .btn{
@@ -186,12 +195,12 @@
     </div>
 
     <div class="sidebar-footer">
-      <p style="margin:0;">This is a <a href="https://smithideas.com/" target="_blank" rel="noopener noreferrer">Smith Ideas</a> project built by Zoë and Miles. 
-        <a href="https://ko-fi.com/smithideas" target="_blank" rel="noopener noreferrer"><b>
-          
-          <br>
-          <br>
-      <p style="margin:8px 0 0;">© 2026</p>
+      <a class="support-btn" href="https://ko-fi.com/smithideas" target="_blank" rel="noopener noreferrer">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6z"/></svg>
+        Support this project
+      </a>
+      <p>This is a <a href="https://smithideas.com/" target="_blank" rel="noopener noreferrer">Smith Ideas</a> project built by Zoë and Miles.</p>
+      <p>© 2026</p>
     </div>
   </aside>
 
